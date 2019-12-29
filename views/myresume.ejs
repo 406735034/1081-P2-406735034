@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title><%= data[6].name%></title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+  
+  <!-- Stylesheets -->
+	<link rel="stylesheet" href="css2/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css2/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css2/flaticon.css"/>
+	<link rel="stylesheet" href="css2/owl.carousel.css"/>
+	<link rel="stylesheet" href="css2/magnific-popup.css"/>
+    <link rel="stylesheet" href="css2/style.css"/>
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+   <!-- fontawesome CSS -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  
+
+  <!-- =======================================================
+    Theme Name: Bell
+    Theme URL: https://bootstrapmade.com/bell-free-bootstrap-4-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="index.html"><img src="img/logo-nav.png" alt="" title="" /></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Bell</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About Us</a></li>          
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li class="menu-has-children"><a href="">TKU</a>
+            <ul>
+				<% for(let i=0; i<data.length;i++) { %>
+				<li><a href="<%= data[i].url %>"><%= data[i].name %></a></li>              
+				<% } %>			  
+            </ul>
+          </li>
+		   <li class="menu-has-children"><a href="">DB DEMO</a>
+            <ul>
+              <li><a href="/projectdoc">Project 說明</a></li>              
+              <li><a href="/myprojects">My Projects</a></li>
+              <li><a href="/statistics">My Dashboard</a></li>
+              
+            </ul>
+          </li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+
+      <nav class="nav social-nav pull-right d-none d-lg-inline">
+        <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+      </nav>
+    </div>
+  </header>
+  <!-- #header -->
+  <!-- Page Content
+    ================================================== -->
+	<div id="preloder"> 
+		<div class="loader"></div>
+	</div>
+	
+	<div class="home-three-style">
+		<!-- Header section start -->
+		<header class="header-section">
+			<div class="container-fluid"> 
+				<div class="row">
+					<div class="col-md-4">
+						<div class="site-logo">
+							<h2><a href="#">My Resume</a></h2>
+							<p>Knowledge is divine</p>
+						</div>
+					</div>
+					<div class="col-md-8 text-md-right header-buttons">
+						<a href="#" class="site-btn">Download CV</a>
+						<a href="#" class="site-btn">Discover me</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header section end -->
+		
+		<div class="container-fluid p-0">
+			<div class="row m-0">
+				<div class="col-xl-5 col-lg-5 p-0">
+					<div class="main-left-area h-100">
+						<section class="intro-section">
+							<figure class="hero-image">
+								<img src="img/bachi.jpg" alt="">
+							</figure>
+							<div class="hero-text">
+								<h2>丁陽 </h2> <h2>Venkata Bhaskar</h2>
+								<p>I’m a Network Engineer in love with Technology, and discovering new worlds and cultures.</p>
+							</div>
+							<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur eget felis et volutpat. Integer id nulla at diam eleifend fringilla. Donec eu ornare libero. Fusce pulvinar magna id pharetra laoreet. Donec convallis cursus libero. Nam semper risus sit amet rhoncus maximus. Integer eros ante, convallis sit amet vulputate nec, molestie vitae nisi. Phasellus convallis augue vel rhoncus congue. Morbi interdum molestie orci sed ullamcorper. Vivamus aliquet eros ut leo luctus, a venenatis metus faucibus. Maecenas ipsum nisi, iaculis in orci vel, molestie gravida erat. </p>
+							<div class="hero-info pt-5">
+								<h2>General Info</h2>
+								<ul>
+									<li><span>Date of Birth</span>Jun 10, 1984</li>
+									<li><span>Address</span>122 Shalun Road, Tamsui, Taipei,251</li>
+									<li><span>E-mail</span>tvbchary@gms.tku.edu.tw</li>
+									<li><span>Phone </span>+886 963 944 024</li>
+								</ul>
+							</div>
+						</section>
+
+						<section class="extra-section spad">
+							<div class="section-title">
+								<h2>Extra Skills</h2>
+							</div>
+							<div class="row">
+								<div class="col-md-6 text-center">
+									<div class="fact-box trans">
+										<div class="fact-content">
+											<div class="circle-progress">
+												<div id="progress1" class="prog-circle"></div>
+												<div class="progress-info">
+													<h2>75%</h2>
+												</div>
+												<div class="prog-title">
+													<h3>CCNA</h3>
+													<p>Cisco systems configuration</p>
+												</div>			
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 text-center">
+									<div class="fact-box trans">
+										<div class="fact-content">
+											<div class="circle-progress">
+												<div id="progress2" class="prog-circle"></div>
+												<div class="progress-info">
+													<h2>83%</h2>
+												</div>
+												<div class="prog-title">
+													<h3>Web Designing</h3>
+													<p>Website design and programming</p>
+												</div>			
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="fact-box">
+										<div class="fact-content">
+											<img src="img2/icon/1-w.png" alt="">
+											<h2>10</h2>
+											<p>Years of Experience</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="fact-box">
+										<div class="fact-content">
+											<img src="img2/icon/2-w.png" alt="">
+											<h2>3</h2>
+											<p>Awards Won</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="language-section spad">
+							<div class="section-title">
+								<h2>Languages</h2>
+							</div>
+							<ul class="language-progress">
+								<li>English <div class="lan-prog" data-lanprogesss="5"></div></li>
+								<li>Chinese <div class="lan-prog" data-lanprogesss="4"></div></li>
+								<li>Telugu <div class="lan-prog" data-lanprogesss="5"></div></li>
+							</ul>
+						</section>
+						<div class="social-links">
+							<a href=""><i class="fab fa-pinterest"></i></a>
+							<a href=""><i class="fab fa-linkedin"></i></a>
+							<a href=""><i class="fab fa-instagram"></i></a>
+							<a href=""><i class="fab fa-facebook"></i></a>
+							<a href=""><i class="fab fa-twitter"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xl-6 col-lg-7">
+					<div class="main-right-area">
+						<!-- Resume section start -->
+						<section class="resume-section spad pt-0">
+							<div class="section-title">
+								<h2>Work Experience</h2>
+							</div>
+							<ul class="resume-list">
+								<li>
+									<h2>2017-Present</h2>
+									<h3>Nvidia Corp. Taiwan</h3>
+									<h4>Network Engineer</h4>
+									<p>Working as a freelancer Network Engineer for Nvidia Corp. Taiwan. Key responsibility is to maintain the data center, troubleshooting and providing any other on demand services.  </p>
+								</li>
+								<li>
+									<h2>2008-2017</h2>
+									<h3>Info Telecom Services Idnia Pvt. Ltd</h3>
+									<h4>Hardware and Network Engineer</h4>
+									<p>Sit amet, consectetur adipiscing elit. Sed porttitor orci ut sapien scelerisque viverra. Sed trist ique justo nec mauris efficitur, ut lacinia elit dapibus. In egestas elit in dap ibus laoreet. Duis magna libero, fermentum ut facilisis id, pulvinar eget tortor. Vestibulum pelle ntesque tincidunt lorem, vitae euismod felis porttitor sed. </p>
+								</li>
+							</ul>
+						</section>
+						<!-- Resume section end -->
+
+						<!-- Resume section start -->
+						<section class="resume-section">
+							<div class="section-title">
+								<h2>Education</h2>
+							</div>
+							<ul class="resume-list">
+								<li>
+									<h2>2008</h2>
+									<h3>Ui/Ux Diploma</h3>
+									<h4>Design College California</h4>
+									<p>Sit amet, consectetur adipiscing elit. Sed porttitor orci ut sapien scelerisque viverra. Sed trist ique justo nec mauris efficitur, ut lacinia elit dapibus. In egestas elit in dap ibus laoreet. Duis magna libero, fermentum ut facilisis id, pulvinar eget tortor. Vestibulum pelle ntesque tincidunt lorem, vitae euismod felis porttitor sed. </p>
+								</li>
+								<li>
+									<h2>2006</h2>
+									<h3>Web design Diploma</h3>
+									<h4>Design College California</h4>
+									<p>Sit amet, consectetur adipiscing elit. Sed porttitor orci ut sapien scelerisque viverra. Sed trist ique justo nec mauris efficitur, ut lacinia elit dapibus. In egestas elit in dap ibus laoreet. Duis magna libero, fermentum ut facilisis id, pulvinar eget tortor. Vestibulum pelle ntesque tincidunt lorem, vitae euismod felis porttitor sed. </p>
+								</li>
+							</ul>
+						</section>
+						<!-- Resume section end -->
+						
+						<!-- Review section start -->
+						<section class="review-section spad">
+							<div class="section-title">
+								<h2>References</h2>
+							</div>
+							<div class="review-slider owl-carousel">
+								<div class="single-review">
+									<div class="qut">“</div>
+									<p>Sit amet, consectetur adipiscing elit. Sed porttitor orci ut sapien scelerisque viverra. Sed trist ique justo nec mauris efficitur, ut lacinia elit dapibus. In egestas elit in dap ibus laoreet. Duis magna libero, fermentum ut facilisis id, pulvinar eget tortor. Vestibulum pelle ntesque tincidunt lorem, vitae euismod felis porttitor sed. </p>
+									<h3>Robert G. Smith</h3>
+									<h4>Manager, Company</h4>
+								</div>
+								<div class="single-review">
+									<div class="qut">“</div>
+									<p>Sit amet, consectetur adipiscing elit. Sed porttitor orci ut sapien scelerisque viverra. Sed trist ique justo nec mauris efficitur, ut lacinia elit dapibus. In egestas elit in dap ibus laoreet. Duis magna libero, fermentum ut facilisis id, pulvinar eget tortor. Vestibulum pelle ntesque tincidunt lorem, vitae euismod felis porttitor sed. </p>
+									<h3>Robert G. Smith</h3>
+									<h4>Manager, Company</h4>
+								</div>
+								<div class="single-review">
+									<div class="qut">“</div>
+									<p>Sit amet, consectetur adipiscing elit. Sed porttitor orci ut sapien scelerisque viverra. Sed trist ique justo nec mauris efficitur, ut lacinia elit dapibus. In egestas elit in dap ibus laoreet. Duis magna libero, fermentum ut facilisis id, pulvinar eget tortor. Vestibulum pelle ntesque tincidunt lorem, vitae euismod felis porttitor sed. </p>
+									<h3>Robert G. Smith</h3>
+									<h4>Manager, Company</h4>
+								</div>
+							</div>
+						</section>
+						<!-- skill section start -->
+						<div class="skill-section">
+							<div class="section-title">
+								<h2>Skills</h2>
+							</div>
+							<div class="skills">
+								<div class="single-progress-item">
+									<div class="progress-bar-style" data-progress="99"></div>
+									<p>Design</p>
+								</div>
+								<div class="single-progress-item">
+									<div class="progress-bar-style" data-progress="75"></div>
+									<p>Illsutrator</p>
+								</div>
+								<div class="single-progress-item">
+									<div class="progress-bar-style" data-progress="87"></div>
+									<p>Photoshop</p>
+								</div>
+								<div class="single-progress-item">
+									<div class="progress-bar-style" data-progress="60"></div>
+									<p>HTML</p>
+								</div>
+							</div>
+							<div class="icon-box-area spad">
+								<div class="icon-box">
+									<i class="flaticon-032-cooking"></i>
+									<p>Cooking</p>
+								</div>
+								<div class="icon-box">
+									<i class="flaticon-015-photo-camera"></i>
+									<p>Photography</p>
+								</div>
+								<div class="icon-box">
+									<i class="flaticon-013-chess-1"></i>
+									<p>Playing Chess</p>
+								</div>
+								<div class="icon-box">
+									<i class="flaticon-001-yoga"></i>
+									<p>Yoga</p>
+								</div>
+								<div class="icon-box">
+									<i class="flaticon-035-tent"></i>
+									<p>Camping in nature</p>
+								</div>
+							</div>
+						</div>
+						<!-- skill section end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js2/jquery-2.1.4.min.js"></script>
+	<script src="js2/bootstrap.min.js"></script>
+	<script src="js2/owl.carousel.min.js"></script>
+	<script src="js2/magnific-popup.min.js"></script>
+	<script src="js2/circle-progress.min.js"></script>
+	<script src="js2/main.js"></script>
+	<!-- Content Area End -->
+  
+  <!-- @component: footer -->
+
+  <!-- @component: footer -->
+
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+            <p class="copyright-text">
+              © 丁陽 406735034 教育科技系 三A
+            </p>
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bell
+              -->
+              <a href="https://bootstrapmade.com/">期末作業</a> by 丁陽
+            </div>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/tether/js/tether.min.js"></script>
+  <script src="lib/stellar/stellar.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/easing/easing.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/parallax/parallax.js"></script>
+  <script src="lib/lockfixed/lockfixed.min.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+
+  <script src="contactform/contactform.js"></script>
+
+</body>
+</html>

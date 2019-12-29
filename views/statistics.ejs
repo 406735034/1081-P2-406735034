@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title><%= title%></title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Bell
+    Theme URL: https://bootstrapmade.com/bell-free-bootstrap-4-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="index.html"><img src="img/logo-nav.png" alt="" title="" /></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Bell</a></h1>-->
+      </div>
+
+     <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About Us</a></li>          
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li class="menu-has-children"><a href="">TKU</a>
+            <ul>
+              <li><a href="/intro">Intro</a></li>              
+              <li><a href="/pokemon">Pokemon</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/imagegallery">Image Gallery</a></li>
+			        <li><a href="/div">Div</a></li>
+			        <li><a href="/nav">Nav</a></li>
+			        <li><a href="/myresume">My Resume</a></li>
+			        <li><a href="/myclass">My Class</a></li>	  
+            </ul>
+          </li>
+		   <li class="menu-has-children"><a href="">DB DEMO</a>
+            <ul>
+              <li><a href="/projectdoc">Project 說明</a></li>              
+              <li><a href="/myprojects">My Projects</a></li>
+              <li><a href="/statistics">My Dashboard</a></li>
+              
+            </ul>
+          </li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+
+      <nav class="nav social-nav pull-right d-none d-lg-inline">
+        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+      </nav>
+    </div>
+  </header>
+  <!-- #header -->
+  <!-- Page Content
+    ================================================== -->
+	<!-- Content Area Start -->
+	
+	
+	
+	  <section class="about" id="about">
+    <div class="container text-center">
+      <h2>
+         <%= title%>
+        </h2>
+
+      
+      <div class="row stats-row">
+        <div class="stats-col text-center col-md-3 col-sm-6">
+          <div class="circle">
+            <span class="stats-no" data-toggle="counter-up"><%= bachelorCount.length %></span> Bachelor Courses
+          </div>
+        </div>
+
+        <div class="stats-col text-center col-md-3 col-sm-6">
+          <div class="circle">
+            <span class="stats-no" data-toggle="counter-up"><%= masterCount.length %></span> Master Courses
+          </div>
+        </div>
+
+        <div class="stats-col text-center col-md-3 col-sm-6">
+          <div class="circle">
+            <span class="stats-no" data-toggle="counter-up"><%= phdCount.length %></span> Ph.D Courses
+          </div>
+        </div>
+
+        <div class="stats-col text-center col-md-3 col-sm-6">
+          <div class="circle">
+            <span class="stats-no" data-toggle="counter-up"><%= data.length %></span> Total Courses
+          </div>
+        </div>
+      </div>
+	  <section>
+       <div class="container">
+           <div class="row">
+               <div class="col-md-12">
+                   <div class="card">
+                       <div class="card-header">
+                           <h3><%= title2 %></h3>
+                       </div>
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <th>#</th>
+                            <th>Course Name</th>
+                            <th>College</th>
+                            <th>Degree</th>
+                            <th>Tution Fees</th>
+                        </thead>
+                        <tbody>
+                          <% for(let i=0; i<data.length; i++)  { %>
+                           <tr>
+                                <td><%= data[i].id %></td>
+                                <td><%= data[i].course %></td>
+                                <td><%= data[i].college %></td>
+                                <td><%= data[i].degree %></td>
+                                <td> <%= data[i].fees %> </td>
+                           </tr>
+                          <% } %>
+                        </tbody>
+                    </table>
+                   </div>
+               </div>
+              
+               
+           </div>
+       </div>
+    </section>
+    </div>
+  </section>
+	<!-- Content Area End -->
+  
+  <!-- @component: footer -->
+
+  <!-- @component: footer -->
+
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+            <p class="copyright-text">
+              © 丁陽 406735034 教育科技系 三A
+            </p>
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bell
+              -->
+              <a href="https://bootstrapmade.com/">期末作業</a> by 丁陽
+            </div>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/tether/js/tether.min.js"></script>
+  <script src="lib/stellar/stellar.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/easing/easing.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/parallax/parallax.js"></script>
+  <script src="lib/lockfixed/lockfixed.min.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+
+  <script src="contactform/contactform.js"></script>
+
+</body>
+</html>
